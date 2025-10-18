@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3 | たった3問でわかる。あなたに必要なインナーケア診断</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Serif+JP:wght@200;300;400;500&family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1067499045293329');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1067499045293329&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <div id="app">
+        <section id="section1" class="section active">
+            <div class="container">
+                <div class="main-visual">
+                    <a href="https://pthree.jp/lp?u=media8" class="product-link" target="_blank" rel="noopener noreferrer">
+                        <img src="public/p3-image.png" alt="P3 PERFECT PERSONALIZED PROGRAM" class="product-image">
+                    </a>
+                </div>
+                <div class="main-copy-container">
+                    <h1 class="main-copy">
+                        <span class="copy-line1" data-text="あなたに必要な<br>エイジングケア診断"></span>
+                        <span class="copy-line2" data-text="たった3問でわかる。"></span>
+                    </h1>
+                    <div class="copy-decoration">
+                        <span class="deco-line"></span>
+                        <span class="deco-dot"></span>
+                        <span class="deco-line"></span>
+                    </div>
+                </div>
+                <div class="question-area">
+                    <h2 class="question-title" data-text="Q1. 最近気になる変化は？"></h2>
+                    <div class="options">
+                        <button class="option-button" data-answer="A" onclick="selectAnswer(1, 'A')">
+                            <span class="option-label">疲れやすい・朝スッキリしない</span>
+                        </button>
+                        <button class="option-button" data-answer="B" onclick="selectAnswer(1, 'B')">
+                            <span class="option-label">鏡を見て、<br>年齢による変化を感じる</span>
+                        </button>
+                        <button class="option-button" data-answer="C" onclick="selectAnswer(1, 'C')">
+                            <span class="option-label">食生活の乱れ・栄養不足</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="section">
+            <div class="container">
+                <div class="progress-bar">
+                    <span class="progress-text">Q2 / 全3問</span>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 66.67%;" data-percent="67"></div>
+                        <span class="progress-percent">67%</span>
+                    </div>
+                </div>
+                <div class="question-area">
+                    <h2 class="question-title">Q2. サプリに求めることは？</h2>
+                    <div class="options">
+                        <button class="option-button" data-answer="A" onclick="selectAnswer(2, 'A')">
+                            <span class="option-label">科学的根拠と信頼性</span>
+                        </button>
+                        <button class="option-button" data-answer="B" onclick="selectAnswer(2, 'B')">
+                            <span class="option-label">手軽さと続けやすさ</span>
+                        </button>
+                        <button class="option-button" data-answer="C" onclick="selectAnswer(2, 'C')">
+                            <span class="option-label">根本からのトータルケア</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3" class="section">
+            <div class="container">
+                <div class="progress-bar">
+                    <span class="progress-text">Q3 / 全3問</span>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 100%;" data-percent="100"></div>
+                        <span class="progress-percent">100%</span>
+                    </div>
+                </div>
+                <div class="question-area">
+                    <h2 class="question-title">Q3. あなたが目指す、理想の自分は？</h2>
+                    <div class="options">
+                        <button class="option-button" data-answer="A" onclick="selectAnswer(3, 'A')">
+                            <span class="option-label">常に最高のパフォーマンス</span>
+                        </button>
+                        <button class="option-button" data-answer="B" onclick="selectAnswer(3, 'B')">
+                            <span class="option-label">エネルギッシュで若々しい印象</span>
+                        </button>
+                        <button class="option-button" data-answer="C" onclick="selectAnswer(3, 'C')">
+                            <span class="option-label">内側から輝く健康美</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="loading-section" class="section">
+            <div class="container">
+                <div class="loading-content">
+                    <p class="thank-you">診断ありがとうございます。</p>
+                    <p class="leading-text">結果を基に...</p>
+                    <div class="loading-animation">
+                        <div class="ripple-container">
+                            <div class="ripple"></div>
+                            <div class="ripple"></div>
+                            <div class="ripple"></div>
+                        </div>
+                    </div>
+                    <p class="loading-text">あなたに最適なご提案を準備しています...</p>
+                    <div class="loading-progress-container">
+                        <div class="loading-progress-bar">
+                            <div class="loading-progress-fill"></div>
+                        </div>
+                        <p class="loading-progress-percent">0%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">PR:LADDER(株)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

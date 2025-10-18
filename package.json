@@ -1,0 +1,18 @@
+{
+  "name": "linku-questionnaire-lp",
+  "version": "1.0.0",
+  "description": "LINK+U アンケートランディングページ",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'No build required for static site'"
+  },
+  "keywords": [
+    "landing-page",
+    "questionnaire",
+    "linku"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}
